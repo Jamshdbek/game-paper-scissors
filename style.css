@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("https://phonoteka.org/uploads/posts/2021-05/1621825659_30-phonoteka_org-p-geim-fon-khaimolta-30.jpg");
+}
+
+body .container {
+  width: 50vw;
+  height: 60vh;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fcf7f7;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-box-shadow: 2px 5px 12px 2px black;
+          box-shadow: 2px 5px 12px 2px black;
+}
+
+body .container .comp {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  border: solid 0.1px black;
+}
+
+body .container .comp h2 {
+  margin: auto;
+  margin-top: 5vh;
+  width: 30vh;
+  height: 10vh;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #1eb9f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .container .comp img {
+  position: relative;
+  float: left;
+}
+
+body .container .result {
+  text-align: center;
+  margin: auto;
+  width: 50vh;
+  height: 20vh;
+  border-radius: 30px;
+  background-color: #4e4ed2;
+}
+
+body .container .result #result {
+  font-size: 60px;
+  text-align: center;
+  color: #111010;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+body .btn button {
+  border: none;
+  margin-left: 20px;
+}
+
+body .btn button:hover {
+  -webkit-box-shadow: 0px 0px 5xp 5px white;
+          box-shadow: 0px 0px 5xp 5px white;
+}
+
+body .btn img {
+  width: 100px;
+}
+
+body .btn #tosh {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("imgs/photo_2022-04-16_13-30-47.jpg");
+  background-size: cover;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+body .btn #tosh:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 5xp 2px white;
+          box-shadow: 1px 1px 5xp 2px white;
+}
+
+body .btn #qogoz {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("imgs/photo_2022-04-16_13-31-18.jpg");
+  background-size: cover;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+body .btn #qogoz:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 5xp 2px white;
+          box-shadow: 1px 1px 5xp 2px white;
+}
+
+body .btn #qaychi {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("imgs/photo_2022-04-16_13-31-22.jpg");
+  background-size: cover;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+body .btn #qaychi:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 5xp 2px white;
+          box-shadow: 1px 1px 5xp 2px white;
+}
+
+@media (max-width: 570px) {
+  body .container {
+    width: 100%;
+  }
+  body .container .btn {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .btn button {
+    padding: 0;
+    margin: auto;
+  }
+  body .container .btn img {
+    position: relative;
+    width: 100px;
+  }
+  body .container .result {
+    width: 40vh;
+    height: 20vh;
+  }
+}
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.winning-message a {
+  text-decoration: none;
+  color: #020202;
+}
+
+.winning-message button {
+  font-size: 3rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.winning-message button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.winning-message img {
+  width: 200px;
+  text-align: center;
+}
+
+.winning-messageshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.over-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.over-message a {
+  text-decoration: none;
+  color: #000;
+}
+
+.over-message img {
+  text-align: center;
+}
+
+.over-message button {
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.over-message button:hover {
+  background-color: black;
+  color: aliceblue;
+  border-color: white;
+}
+
+.over-messageshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerone_main {
+  margin: auto;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.containerone_main #text {
+  font-size: x-large;
+  margin-top: 10vw;
+}
+
+.containerone_main button {
+  margin-top: 5vh;
+  width: 30vh;
+  height: 10vh;
+  border-radius: 40px;
+  border: none;
+  background-color: #3f2bef;
+  -webkit-box-shadow: 0px 0px 10px 4px  #3f2bef;
+          box-shadow: 0px 0px 10px 4px  #3f2bef;
+}
+
+.containerone_main button a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #000;
+}
+
+.containerone_main .fon-img img {
+  margin: auto;
+  width: 30vh;
+}
+/*# sourceMappingURL=style.css.map */

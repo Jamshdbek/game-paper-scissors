@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // background-color: #2a292b;]
+    background: url("https://phonoteka.org/uploads/posts/2021-05/1621825659_30-phonoteka_org-p-geim-fon-khaimolta-30.jpg");
+
+    .container {
+        width: 50vw;
+        height: 60vh;
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+        border-radius: 5px;
+        // background-image: url("https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1092.jpg?t=st=1650297006~exp=1650297606~hmac=b83d142ef857e15b031a8cda66f0a7d39cc8bbc5b2084aab33a5ed04929304cf&w=1060");
+        // background: url("https://kartinkin.net/uploads/posts/2021-01/1611430469_11-p-fon-dlya-igri-zmeika-17.png");
+        color: #fcf7f7;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-shadow: 2px 5px 12px 2px black;
+
+        .comp {
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            border: solid 0.1px black ;
+            
+
+            h2 {
+                margin: auto;
+                margin-top: 5vh;
+                width: 30vh;
+                height: 10vh;
+                border-radius: 30px;
+                padding: 20px;
+                background-color: #1eb9f1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+
+            img {
+                position: relative;
+                float: left;
+            }
+        }
+
+        .result {
+            text-align: center;
+            margin: auto;
+            width: 50vh;
+            height: 20vh;
+            border-radius: 30px;
+            // padding-bottom: 5px;
+             background-color: #4e4ed2;
+            // background: linear-gradient(35deg , rgb(243, 236, 236) ,rgb(10, 17, 76));
+
+            #result {
+                font-size: 60px;
+
+                text-align: center;
+                color: #111010;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        // .noret{
+        //     width: 50vh;
+        //     height: 5vh;
+        //     text-align: center;
+        //     margin: auto;
+        //     border-radius: 10px;
+        //     color: #000;
+        //     background-color: rgba(229, 246, 47, 0.945);
+        // }
+
+
+
+
+
+    }
+
+    .btn {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+
+
+
+        button {
+            border: none;
+            margin-left: 20px;
+            &:hover{
+                box-shadow: 0px 0px 5xp 5px white;
+            }
+
+        }
+
+        img {
+            width: 100px;
+        }
+
+        #tosh {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("imgs/photo_2022-04-16_13-30-47.jpg");
+            background-size: cover;
+            transition: 0.5;
+            &:active{
+                transform: scale(1.1);
+                box-shadow: 1px 1px 5xp 2px white;
+            }
+
+        }
+
+        #qogoz {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("imgs/photo_2022-04-16_13-31-18.jpg");
+            background-size: cover;
+            transition: 0.5;
+            &:active{
+                transform: scale(1.1);
+                box-shadow: 1px 1px 5xp 2px white;
+            }
+
+        }
+
+        #qaychi {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("imgs/photo_2022-04-16_13-31-22.jpg");
+            background-size: cover;
+            transition: 0.5;
+            &:active{
+                transform: scale(1.1);
+                box-shadow: 1px 1px 5xp 2px white;
+            }
+        }
+    }
+
+    @media (max-width: 570px) {
+        .container {
+            width: 100%;
+
+            .btn {
+                text-align: center;
+                display: flex;
+
+                justify-content: center;
+
+                button {
+                    padding: 0;
+                    margin: auto;
+
+                }
+
+                img {
+                    position: relative;
+                    width: 100px;
+
+                }
+
+            }
+
+            .result {
+                width: 40vh;
+                height: 20vh;
+            }
+
+        }
+
+
+    }
+
+  
+   
+}
+
+// main list - index
+
+
+  
+    .winning-message{
+       
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;  
+        background-color: rgba(0,0,0, .6);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        flex-direction: column;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+       a{
+           text-decoration: none;
+           color: #020202;
+    
+       }
+        
+        button{
+           
+            font-size: 3rem;
+            background-color: white;
+          cursor: pointer;
+          &:hover{
+              background-color: black;
+              color: white;
+              border-color: white;
+          }
+        }
+        img{
+            width: 200px;
+            text-align: center;
+            
+        }
+    }
+    .winning-messageshow{
+
+        display: flex;
+    }
+    // over messeages
+
+    .over-message{
+       
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;  
+        background-color: rgba(0,0,0, .6);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        flex-direction: column;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        img{
+            text-align: center;
+        }
+        
+        button{
+           
+            font-size: 3rem;
+            background-color: white;
+            border-radius: 20px;
+          cursor: pointer;
+          &:hover{
+              background-color: black;
+             color: aliceblue;
+              border-color: white;
+          }
+        }
+    }
+    .over-messageshow{
+
+        display: flex;
+    }
+     
+   
+
+
+
+
+
+    .containerone_main{
+        margin: auto;
+        text-align: center;
+        margin-top: 30vh;
+        #text{
+    
+            font-size: x-large;
+    
+            margin-top: 10vw;
+        }
+        button{
+            margin-top:5vh;
+            width: 30vh;
+            height: 10vh;
+            border-radius: 40px;
+            border: none;
+            background-color: #3f2bef;
+            box-shadow:  0px 0px 10px 4px  #3f2bef ;
+         
+           a{
+            
+               text-decoration: none;
+               font-size: x-large;
+               color: #000;
+           }
+            
+        }
+        .fon-img{
+            img{
+                margin: auto;
+                width: 30vh;
+            }
+          
+        }
+    }
+    
+    
+    // s
+    
+       
+    
+       
+        @media (min-width: 570px) {
+         
+    
+        }
+    
