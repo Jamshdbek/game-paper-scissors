@@ -10,6 +10,7 @@ const winningMessageTextElement = document.querySelector("[data-winning-message-
 const possibleChoices = document.querySelectorAll("button");
 // ocnke
 let computerChoice;
+
 let userChoice;
 let result;
 let ujon = 8;
@@ -74,7 +75,7 @@ function getResult() {
 
   Server(result);
 }
-
+console.log("enterg");
 // document.querySelector("h1").innerHTML =` ${cjon} kopyuter & inson ${ujon}`
 
 function Server(result) {
