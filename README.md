@@ -1,2 +1,3 @@
 ﻿# game-paper-scissors
-welcome
+welcome this game tyeing for vanilla javaScript
+so tyis poroject my forst game 
